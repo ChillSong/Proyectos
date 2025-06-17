@@ -1,0 +1,84 @@
+.fondo {
+    background-color: #0E1B3A;
+
+}
+
+.contenedor {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  background-color: #f2f2f2;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 200px;
+  margin: 20px auto;
+  box-shadow: 0 4px 10px rgba(255, 255, 255, 0);
+  transition: transform 0.2s;
+}
+
+.tarjeta:hover {
+  transform: scale(1.03);
+}
+
+.tarjeta img {
+  width: 100%;
+  height: auto;
+}
+
+.tarjeta .contenido {
+  padding: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.tarjeta h2 {
+  margin: 0;
+  font-size: 1.3em;
+}
+
+.tarjeta p {
+  margin-top: 8px;
+  font-size: 0.95em;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 32px;
+  font-weight: bold;
+  color: #ffffff;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Contenedor para la imagen, para simular el "marco" de fondo */
+.foto-container {
+  width: 220px;
+  height: 220px;
+  background-color: #0E1B3A;
+  border-radius: 50%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5); /* Sombra para el contenedor */
+  position: absolute;
+
+  top: 50px;
+  right: 100px;
+}
+
+.mi-foto {
+  width: 200px; /* Tamaño real de la imagen */
+  height: 200px;
+  border-radius: 50% ; /* Bordes redondeados para la imagen */
+  object-fit: cover;
+  border: 2px solid #64FFDA; /* Borde delgado para la foto misma */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}

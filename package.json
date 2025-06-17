@@ -1,0 +1,38 @@
+{
+  "name": "proyectos",
+  "version": "1.0.0",
+  "description": "Ejemplos de proyectos de uso real",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ChillSong/Proyectos.git"
+  },
+  "keywords": [
+    "node",
+    "nodejs",
+    "express",
+    "web",
+    "api",
+    "react",
+    "frontend",
+    "ui",
+    "mysql",
+    "api",
+    "rest",
+    "backend",
+    "javascript",
+    "js"
+  ],
+  "author": "ChillSong",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ChillSong/Proyectos/issues"
+  },
+  "homepage": "https://github.com/ChillSong/Proyectos#readme",
+  "dependencies": {
+    "express": "^5.1.0"
+  }
+}
