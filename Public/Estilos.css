@@ -75,10 +75,53 @@
 }
 
 .mi-foto {
-  width: 200px; /* Tamaño real de la imagen */
-  height: 200px;
+  width: 210px; /* Tamaño real de la imagen */
+  height: 210px;
   border-radius: 50% ; /* Bordes redondeados para la imagen */
   object-fit: cover;
   border: 2px solid #64FFDA; /* Borde delgado para la foto misma */
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.barra-social {
+  position: fixed;
+  top: 50%;
+  left: 10px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 5px;
+  border-radius: 0 10px 10px 0;
+  box-shadow: 2px 0 8px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+.icono-red {
+  position: relative;
+  width: 32px;
+  height: 32px;
+  margin: 10px 0;
+  display: block;
+}
+
+.icono-red img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform 0.2s ease;
+}
+
+.icono-animado {
+  display: none;
+}
+
+.icono-red:hover .icono-statico {
+  display: none;
+}
+
+.icono-red:hover .icono-animado {
+  display: block;
+  transform: scale(1.1);
 }
